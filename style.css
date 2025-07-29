@@ -1,0 +1,211 @@
+/* Basic Layout */
+body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #fff;
+    font-family: 'Open Sans',sans-serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.section {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.container {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px !important;
+}
+
+/* Typography */
+#title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Varela Round',sans-serif;
+    color: #4d4d4d;
+    font-size: 35px;
+    line-height: 65px;
+    font-weight: 700;
+    letter-spacing: 4;
+}
+
+.subheader {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Open Sans',sans-serif;
+    color: #333;
+    font-size: 25px;
+    line-height: 44px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.section-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Varela Round',sans-serif;
+    color: #4d4d4d;
+    font-size: 35px;
+    line-height: 65px;
+    font-weight: 700;
+    letter-spacing: 4;
+}
+
+.subsection-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Varela Round', sans-serif;
+    color: #4d4d4d;
+    font-size: 25px;
+    line-height: 65px;
+    font-weight: 700;
+    letter-spacing: 4;
+}
+
+.title-row {
+    margin-top: 20px;
+}
+
+.paragraph {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans',sans-serif;
+    color: #333;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.abstract {
+    width: 85%;
+    text-align: justify !important;
+}
+
+.is-centered {
+    justify-content: center;
+    display: flex;
+}
+
+/* Grid Layout */
+.base-row {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.base-col {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    padding: 0 2px;
+}
+
+.base-col-nerf {
+    padding: 0 50px;
+}
+
+.result-col {
+    width: 25%;
+}
+
+.result-col-two {
+    width: 50%;
+}
+
+.result-col-two-nerf {
+    width: 50%;
+    padding: 0 20px;
+}
+
+/* Video Styling */
+.base-result-video {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: -5%;
+    margin-right: -10%;
+    margin-left: -10%;
+}
+
+/* Method Names */
+.method-name {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 19px;
+    color: #666;
+}
+
+/* Comparison Section */
+.comparison-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comparison-centered .base-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Prompts and Grid Spacing */
+.prompt-text {
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-prompts {
+    margin-bottom: 5px;
+}
+
+.grid-videos {
+    margin-bottom: 30px;
+}
+
+.comparison-prompts {
+    margin-bottom: 5px;
+}
+
+.comparison-videos {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 550px) {
+    #title {
+        font-size: 25px;
+        line-height: 20px;
+    }
+
+    .subheader {
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .section-header {
+        font-size: 25px;
+        line-height: 200%;
+    }
+
+    .subsection-header {
+        font-size: 20px;
+        line-height: 200%;
+    }
+} 

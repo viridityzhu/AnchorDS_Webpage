@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Anchor the Dynamic Source for Semantically Consistent Text-to-3D Generation</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Varela+Round" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+  <div class="section">
+    <div class="container">
+      <div class="title-row">
+        <h2 id="title">Anchor the Dynamic Source</h1>
+        <h2 id="title">for Semantically Consistent Text-to-3D Generation</h1>
+      </div>
+         <h2 class="subheader">Anonymous Authors</h2>
+
+      
+
+
+      <h2 class="section-header">More Results</h2>
+      <div class="is-centered">
+        <div class="paragraph abstract">
+          <p>We present results showcasing our method's ability to generate semantically consistent 3D objects from text prompts, along with comparisons to existing approaches.</p>
+          <!-- <br> -->
+          <p style="font-style: italic;"> Note that due to the file size limit, the videos are compressed. We will publish the full resolution videos once the paper is accepted.</p>
+        </div>
+      </div>
+
+      <h3 class="subsection-header">3D Consistency Comparison with Existing Methods</h3>
+      <div class="editing-gallery comparison-centered">
+        <div class="comparison-prompts base-row">
+          <div class="base-col ">
+            <div class="prompt-text" style="width: 100%;">A DSLR photo of a chow chow puppy</div>
+          </div>
+        </div>
+        <div class="comparison-videos base-row">
+          <div class="base-col result-col-two">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/comparison/chow_chow_puppy-sb.mp4" type="video/mp4">
+            </video>
+            <div class="method-name"><strong>SDS-Bridge</strong></div>
+          </div>
+          <div class="base-col result-col-two">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/comparison/chow_chow_puppy-vsd15.mp4" type="video/mp4">
+            </video>
+            <div class="method-name"><strong>VSD (SD 1.5)</strong></div>
+          </div>
+        </div>
+        <div class="comparison-videos base-row">
+          <div class="base-col result-col-two">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/comparison/chow_chow_puppy-vsd21.mp4" type="video/mp4">
+            </video>
+            <div class="method-name"><strong>VSD (SD 2.1)</strong></div>
+          </div>
+          <div class="base-col result-col-two">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/comparison/chow_chow_puppy-ours.mp4" type="video/mp4">
+            </video>
+            <div class="method-name"><strong>Ours</strong></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="paragraph">
+        <p>
+          While other methods show severe Janus problem (multiple heads), our method demonstrates superior 3D consistency compared to existing approaches, maintaining coherent geometry and texture across different viewpoints.
+        </p>
+      </div>
+
+      <h3 class="subsection-header">Visualization of Our Text-to-GS Results</h3>
+      <div class="editing-gallery">
+        <!-- First row of GS results (2 columns) -->
+        <div class="grid-prompts base-row">
+          <div class="base-col result-col-two">
+            <div class="prompt-text">A red barn in a green field</div>
+          </div>
+          <div class="base-col result-col-two">
+            <div class="prompt-text">A vibrant orange pumpkin sitting on a hay bale</div>
+          </div>
+        </div>
+        <div class="grid-videos base-row">
+          <div class="base-col result-col-two">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/gs/barn.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="base-col result-col-two">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/gs/pumpkin.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <!-- Second row of GS results -->
+        <div class="grid-prompts base-row">
+          <div class="base-col result-col-two">
+            <div class="prompt-text">A green cactus in a clay pot</div>
+          </div>
+          <div class="base-col result-col-two">
+            <div class="prompt-text">A gold glittery carnival mask</div>
+          </div>
+        </div>
+        <div class="grid-videos base-row">
+          <div class="base-col result-col-two">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/gs/cactus.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="base-col result-col-two">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/gs/gold_mask.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <!-- Third row of GS results -->
+        <div class="grid-prompts base-row">
+          <div class="base-col result-col-two">
+            <div class="prompt-text">A bright red fire hydrant</div>
+          </div>
+          <div class="base-col result-col-two">
+            <div class="prompt-text">A pair of shiny black patent leather shoes</div>
+          </div>
+        </div>
+        <div class="grid-videos base-row">
+          <div class="base-col result-col-two">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/gs/gs-hydrant.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="base-col result-col-two">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/gs/gs-leather_shoes.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="subsection-header">Visualization of Our Text-to-NeRF Results</h3>
+      <div class="editing-gallery comparison-centered">
+        <!-- First row of NeRF results (2 columns) -->
+        <div class="grid-prompts base-row">
+          <div class="base-col-nerf result-col-two-nerf">
+            <div class="prompt-text">A wooden rocking chair on a porch</div>
+          </div>
+          <div class="base-col-nerf result-col-two-nerf">
+            <div class="prompt-text">A bald eagle carved out of wood</div>
+          </div>
+        </div>
+        <div class="grid-videos base-row">
+          <div class="base-col-nerf result-col-two-nerf">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/nerf/wooden_chair.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="base-col-nerf result-col-two-nerf">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/nerf/eagle_wood.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <!-- Second row of NeRF results -->
+        <div class="grid-prompts base-row">
+          <div class="base-col-nerf result-col-two-nerf">
+            <div class="prompt-text">A colorful parrot on a jungle tree</div>
+          </div>
+          <div class="base-col-nerf result-col-two-nerf">
+            <div class="prompt-text">A faux-fur leopard print hat</div>
+          </div>
+        </div>
+        <div class="grid-videos base-row">
+          <div class="base-col-nerf result-col-two-nerf">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/nerf/parrot.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="base-col-nerf result-col-two-nerf">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/nerf/fur_hat.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <!-- Third row of NeRF results -->
+        <div class="grid-prompts base-row">
+          <div class="base-col-nerf result-col-two-nerf">
+            <div class="prompt-text">A long woolen scarf, striped red and black </div>
+          </div>
+          <div class="base-col-nerf result-col-two-nerf">
+            <div class="prompt-text">A pair of white sneakers on a black mat</div>
+          </div>
+        </div>
+        <div class="grid-videos base-row">
+          <div class="base-col-nerf result-col-two-nerf">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/nerf/scarf2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="base-col-nerf result-col-two-nerf">
+            <video class="base-result-video" muted autoplay webkit-playsinline playsinline loop>
+              <source src="videos/nerf/white_sneakers_neat.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="paragraph">
+        <p>
+          Our method produces high-quality 3D objects for both Gaussian Splatting and NeRF representations, demonstrating consistent results across different 3D representations while maintaining semantic fidelity to the input text prompts.
+        </p>
+      </div>
+
+      <h3 class="subsection-header">Method Overview</h3>
+        <div class="paragraph">
+          <p>Our AnchorDS method anchors dynamic sources in the score distillation process to ensure semantically consistent text-to-3D generation, effectively addressing multi-face artifacts while maintaining high-quality 3D representations.</p>
+        </div>
+
+      <div class="is-centered">
+        <div style="text-align: center; margin-top: 20px;">
+          <img src="../assets/fig-methodv3.jpg" alt="AnchorDS Method Overview" style="max-width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
