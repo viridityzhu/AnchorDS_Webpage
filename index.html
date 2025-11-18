@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>AnchorDS: Anchoring Dynamic Sources for Semantically Consistent Text-to-3D Generation</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="AnchorDS: Anchoring Dynamic Sources for Semantically Consistent Text-to-3D Generation. An improved score distillation mechanism for high-quality text-to-3D generation that addresses semantic over-smoothing and Janus problems. AAAI 2026.">
+  <meta name="keywords" content="AnchorDS, text-to-3D, 3D generation, score distillation sampling, SDS, neural rendering, Gaussian Splatting, NeRF, semantic consistency, computer vision, AAAI 2026">
+  <meta name="author" content="Jiayin Zhu, Linlin Yang, Yicong Li, Angela Yao">
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="AnchorDS: Anchoring Dynamic Sources for Semantically Consistent Text-to-3D Generation">
+  <meta property="og:description" content="An improved score distillation mechanism for high-quality text-to-3D generation that addresses semantic over-smoothing and Janus problems. AAAI 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jyzhu.top/AnchorDS_Webpage/">
+  <meta property="og:image" content="https://jyzhu.top/AnchorDS_Webpage/videos/fig-methodv3.jpg">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AnchorDS: Anchoring Dynamic Sources for Semantically Consistent Text-to-3D Generation">
+  <meta name="twitter:description" content="An improved score distillation mechanism for high-quality text-to-3D generation that addresses semantic over-smoothing and Janus problems. AAAI 2026.">
+  <meta name="twitter:image" content="https://jyzhu.top/AnchorDS_Webpage/videos/fig-methodv3.jpg">
+
+  <link href="static/anchor-svgrepo-com.svg" rel="icon" media="(prefers-color-scheme: light)" />
+  <link href="static/anchor-svgrepo-com.svg" rel="icon" media="(prefers-color-scheme: dark)" />
 
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Varela+Round" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
 </head>
@@ -21,6 +44,7 @@
       <div class="title-row">
         <h2 id="title">AnchorDS: Anchoring Dynamic Sources</h1>
         <h2 id="title">for Semantically Consistent Text-to-3D Generation</h1>
+        <h4 class="section-header">AAAI 2026</h4>
       </div>
          <div class="base-row author-row add-top-padding">
         <div class="base-col author-col">
@@ -49,22 +73,22 @@
       </div>
 
       <div class="publication-links">
-              <!-- <span class="link-block">
-                <a href="./data/InstructHumans.pdf" class="external-link button is-normal is-rounded is-dark">
+              <span class="link-block">
+                <a href="./AnchorDS-AAAI26-arxiv_version" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg>
                   </span>
                   <span>Paper</span>
                 </a>
-              </span> -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/abs/2404.04037" class="external-link button is-normal is-rounded is-dark">
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2511.11692" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"> </i>
                   </span>
                   <span>ArXiv</span>
                 </a>
-              </span> -->
+              </span>
               <!-- PDF Link. -->
               <!-- <span class="link-block">
                 <a href="https://drive.google.com/file/d/1q2MGzP3ChM4wep9invkxG6bnGxmXE1fA/view?usp=sharing" class="external-link button is-normal is-rounded is-dark">
@@ -86,12 +110,11 @@
             </div>
 
 
-      <h2 class="section-header">More Results</h2>
+
+      <h2 class="subsection-header">Abstract</h2>
       <div class="is-centered">
         <div class="paragraph abstract">
-          <p>We present results showcasing our method's ability to generate semantically consistent 3D objects from text prompts, along with comparisons to existing approaches.</p>
-          <!-- <br> -->
-          <p style="font-style: italic;"> Note that due to the file size limit, the videos are compressed. We will publish the full resolution videos once the paper is accepted.</p>
+          <p>Optimization-based text-to-3D methods distill guidance from 2D generative models via Score Distillation Sampling (SDS), but implicitly treat this guidance as static. This work shows that ignoring source dynamics yields inconsistent trajectories that suppress or merge semantic cues, leading to "semantic over-smoothing" artifacts. As such, we reformulate text-to-3D optimization as mapping a dynamically evolving source distribution to a fixed target distribution. We cast the problem into a dual-conditioned latent space, conditioned on both the text prompt and the intermediately rendered image. Given this joint setup, we observe that the image condition naturally anchors the current source distribution. Building on this insight, we introduce AnchorDS, an improved score distillation mechanism that provides state-anchored guidance with image conditions and stabilizes generation. We further penalize erroneous source estimates and design a lightweight filter strategy and fine-tuning strategy that refines the anchor with negligible overhead. AnchorDS produces finer-grained detail, more natural colours, and stronger semantic consistency, particularly for complex prompts, while maintaining efficiency. Extensive experiments show that our method surpasses previous methods in both quality and efficiency.</p>
         </div>
       </div>
 
